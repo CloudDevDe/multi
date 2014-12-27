@@ -7,7 +7,9 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"zizaco/entrust": "1.2.*@dev",
-		"zizaco/confide": "~4.0@dev"
+		"zizaco/confide": "~4.0@dev",
+		"aura-is-here/laravel-multi-tenant": "dev-master",
+		"way/generators": "~2.0"
 	},
 	"autoload": {
 		"classmap": [
