@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-//
+Route::get('/', 'UsersController@index');
+Route::resource('users', 'UsersController', array('except' => array('show', 'store', 'destroy')));
 
 // Confide routes
 Route::get('users/create', 'UsersController@create');
