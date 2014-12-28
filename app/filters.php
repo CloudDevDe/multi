@@ -13,7 +13,10 @@
 
 App::before(function($request)
 {
-	//
+	 // Tenant Scoping
+  
+        TenantScope::addTenant('company_id', 1);
+  
 });
 
 
