@@ -9,4 +9,9 @@ class User extends Eloquent implements ConfideUserInterface
 {
     use ConfideUser, HasRole, TenantScopedModelTrait;
 
+    public function company()
+	{
+  		return $this->belongsTo('Company');
+  	}
+
 }
